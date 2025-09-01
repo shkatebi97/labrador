@@ -1,7 +1,8 @@
-CC ?= /usr/bin/cc
+CC ?= /usr/bin/gcc
 CFLAGS += -std=c2x -Wall -Wextra -Wmissing-prototypes -Wredundant-decls \
-  -Wshadow -Wpointer-arith -Wno-unused-function -flto=auto \
-  -fwrapv -march=native -mtune=native -O3
+  -Wshadow -Wpointer-arith -Wno-unused-function -flto=auto -fwrapv -O3 \
+  -mavx512f -mavx512dq -mavx512cd -mavx512bw -mavx512vl -mavx512vbmi2 -mavx512ifma -mavx512vbmi \
+  -mavx512vnni -mavx512bitalg -mavx512vpopcntdq -mavx512vp2intersect -mvaes -maes
 RM = /bin/rm
 
 SOURCES = pack.c greyhound.c dachshund.c chihuahua.c labrador.c \
