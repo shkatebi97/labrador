@@ -1,4 +1,4 @@
-CC ?= /usr/bin/gcc
+CC ?= /usr/bin/cc
 CFLAGS += -std=c2x -Wall -Wextra -Wmissing-prototypes -Wredundant-decls \
   -Wshadow -Wpointer-arith -Wno-unused-function -flto=auto -fwrapv -O3 \
   -mavx512f -mavx512dq -mavx512cd -mavx512bw -mavx512vl -mavx512vbmi2 -mavx512ifma -mavx512vbmi \
